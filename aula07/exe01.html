@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+      div#area {
+        background-color: rgb(21, 189, 21);
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <h1>somando numeros</h1>
+    <input type="number" name="n1" id="n1">+
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="somar()"><br>
+    <p></p>
+
+    <script>
+
+      function somar() {
+        var num1 = document.querySelector('input#n1')
+        var num2 = document.querySelector('input#n2')
+        var n1 = Number(num1.value) 
+        var n2 = Number(num2.value) 
+        var soma = n1 + n2
+        document.getElementsByTagName('p')[0].innerText = `Resultado de ${n1} mais ${n2} é ${soma}`
+      }
+    </script>
+</body>
+</html>
