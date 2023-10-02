@@ -1,7 +1,12 @@
-do {
-    console.log('tudo bem')
-    c++
-} while(c <= 6)
+for (var c = 1 ; c <= 5 ; c++) {
+    console.log(c)
+}
+
+
+// do {
+//     console.log('tudo bem')
+//     c++
+// } while(c <= 6)
 
 
 // var c = 1
